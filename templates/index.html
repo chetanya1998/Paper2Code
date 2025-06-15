@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paper2Code</title>
+</head>
+<body>
+<h1>Paper2Code</h1>
+<p>Turn research papers into working code.</p>
+{% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="pdf" accept="application/pdf" required>
+    <button type="submit">Upload PDF</button>
+</form>
+</body>
+</html>
